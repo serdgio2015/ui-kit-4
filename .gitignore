@@ -1,3 +1,4 @@
 *.psd
 *.cfg
 less/
+.gitignore
