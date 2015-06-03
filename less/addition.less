@@ -1,0 +1,248 @@
+
+.addition:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.addition__title {
+	font-family: 'MiriadPro-regular';
+	border-bottom: 1px solid @color-line;
+	margin: 22px 0 22px;
+	line-height: @h1+30px;
+}
+
+.messages-list {
+	float: left;
+	list-style: none;
+	width: 260px;
+
+	&__item__title {
+		font-family: 'Pt-sans';
+		font-size: 18px;
+		color: #374c78;
+		background: #fff;
+		border-radius: 4px 4px 0 0;
+		padding: 20px 0 20px 20px;
+	}
+
+	&__item {
+		height: 40px;
+		background: #fff;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 1px;
+
+		a {
+			position: relative;
+			line-height: 40px;
+			text-decoration: none;
+			padding-left: 30px;
+			color: #000;
+			font-family: 'Pt-sans';
+			font-size: 14px;
+		}
+
+	}
+
+	&__link__new:after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 20px;
+		height: 15px;
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: 0 0;
+	}
+	&__link__important:after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 20px;
+		height: 15px;
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: -20px 0;
+	}
+	&__link__work:after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 20px;
+		height: 15px;
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: -40px 0;
+	}
+	&__link__spam:after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 20px;
+		height: 15px;
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: -60px 0;
+	}
+
+	&__item__work {
+		background: #fff;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 1px;
+
+		a {
+			position: relative;
+			line-height: 40px;
+			text-decoration: none;
+			padding-left: 30px;
+			color: #000;
+			font-family: 'Pt-sans';
+			font-size: 14px;
+		}
+
+		.messages-list__list-work {
+			list-style: none;
+			display: none;
+			
+			.messages-list__link-work {
+				position: relative;
+				line-height: 40px;
+				text-decoration: none;
+				padding-left: 38px;
+				color: #000;
+				font-family: 'Pt-sans';
+				font-size: 14px;
+			}
+
+			.messages-list__span2 {
+				font-family: 'Arial';
+				font-size: 11px;
+				float: right;
+				width: 33px;
+				line-height: 16px;
+				margin-top: 12px;
+				text-align: center;
+			}
+		}
+	}
+
+	&__item__show {
+		font-family: 'Pt-sans';
+		font-size: 18px;
+		color: #374c78;
+		background: #fff;
+		border-radius: 0 0 4px 4px;
+		padding: 20px 0 20px 20px;
+		margin-top: 1px;
+
+		a {
+			font-family: 'Pt-sans';
+			font-size: 14px;
+			color: #db5286;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	.messages-list__span1 {
+		font-family: 'Arial';
+		font-size: 11px;
+		float: right;
+		line-height: 16px;
+		background: #f29393;
+		border-radius: 7px;
+		width: 33px;
+		color: #fff;
+		text-align: center;
+		margin-top: 12px;
+	}
+
+}
+
+.addition__addition-wrap {
+	float: left;
+	margin-left: 30px;
+}
+
+.bread-crumbs {
+	background: #fff;
+	border-radius: 4px;
+	width: 315px;
+	margin-bottom: 30px;
+
+	&__menu-list {
+		position: relative;
+		list-style: none;
+		padding-left: 20px;
+	}
+	
+	&__menu-list:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	&__menu-item {
+		float: left;
+		height: 50px;
+		padding-left: 3px;
+	}
+	&__menu-item:first-child {
+		position: relative;
+		float: left;
+		height: 50px;
+		padding-left: 30px;
+	}
+	&__menu-item:first-child::after {
+		content: '';
+		position: absolute;
+		top: 19px;
+		left: 0;
+		width: 20px;
+		height: 14px;
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: -80px 0;
+	}
+
+	&__menu-link {
+		line-height: 50px;
+		font-family: 'Pt-sans';
+		font-size: 15px;
+		color: #353535;
+	}
+	&__menu-link:hover {
+		text-decoration: none;
+	}
+}
+
+.value {
+	background: #fff;
+	border-radius: 4px;
+	width: 220px;
+	height: 50px;
+	padding-left: 20px;
+
+	&__value-link {
+		display: inline-block;
+		font-family: 'Roboto-regular';
+		font-size: 15px;
+		color: #353535;
+		text-decoration: none;
+		line-height: 50px;
+	}
+
+	&__star {
+		display: inline-block;
+		width: 20px;
+		height: 15px;
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: -100px 0;
+	}
+	&__star:last-child {
+		background: url('../images/sprite2.png') no-repeat;
+		background-position: -120px 0;
+	}
+}

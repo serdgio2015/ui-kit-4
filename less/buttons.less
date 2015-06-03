@@ -1,0 +1,144 @@
+.buttons {
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	&__title {
+		font-family: 'MiriadPro-regular';
+		border-bottom: 1px solid @color-line;
+		margin: 22px 0 22px;
+		line-height: @h1+30px;
+	}
+
+	&__list-big, &__list-small {
+		list-style: none;
+		float: left;
+	}
+
+	&__row::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	&__list-big {
+		margin: 20px 20px 20px -12px;
+	}
+	&__list-small {
+		margin: 20px;
+	}
+}
+
+.big-btn {
+	display: block;
+	float: left;
+	width: 130px;
+	height: 34px;
+	margin: 12px;
+	line-height: 34px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 4px;
+	color: #fff;
+
+	&__btn-top {
+		background: @green-link;
+		box-shadow: 0 3px 0 0 @green-shadow;
+	}
+	&__btn-top:hover {
+		background: @green-hover;
+		box-shadow: 0 3px 0 0 @green-shadow-hover;
+	}
+	&__btn-top:active {
+		background: @green-link;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
+
+	&__btn-middle {
+		background: @gray-link;
+		box-shadow: 0 3px 0 0 @gray-shadow;
+	}
+	&__btn-middle:hover {
+		background: @gray-hover;
+		box-shadow: 0 3px 0 0 @gray-shadow-hover;
+	}
+	&__btn-middle:active {
+		background: @gray-link;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
+
+	&__btn-bottom {
+		background: @red-link;
+		box-shadow: 0 3px 0 0 @red-shadow;
+	}
+	&__btn-bottom:hover {
+		background: @red-hover;
+		box-shadow: 0 3px 0 0 @red-shadow-hover;
+	}
+	&__btn-bottom:active {
+		background: @red-link;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
+}
+
+.small-btn {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 26px;
+	margin: 17px;
+	line-height: 26px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 4px;
+	color: #fff;
+
+	&__btn-top {
+		background: @green-link;
+		box-shadow: 0 3px 0 0 @green-shadow;
+	}
+	&__btn-top:hover {
+		background: @green-hover;
+		box-shadow: 0 3px 0 0 @green-shadow-hover;
+	}
+	&__btn-top:active {
+		background: @green-link;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
+
+	&__btn-middle {
+		background: @gray-link;
+		box-shadow: 0 3px 0 0 @gray-shadow;
+	}
+	&__btn-middle:hover {
+		background: @gray-hover;
+		box-shadow: 0 3px 0 0 @gray-shadow-hover;
+	}
+	&__btn-middle:active {
+		background: @gray-link;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
+
+	&__btn-bottom {
+		background: @red-link;
+		box-shadow: 0 3px 0 0 @red-shadow;
+	}
+	&__btn-bottom:hover {
+		background: @red-hover;
+		box-shadow: 0 3px 0 0 @red-shadow-hover;
+	}
+	&__btn-bottom:active {
+		background: @red-link;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
+}
+
+

@@ -1,0 +1,228 @@
+.interactive {
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	&__title {
+		font-family: 'MiriadPro-regular';
+		border-bottom: 1px solid @color-line;
+		margin: 22px 0 22px;
+		line-height: @h1+30px;
+	}
+
+	&__slider, &__rightside {
+		width: 50%;
+		float: left;
+	}
+
+	&__slider-radio {
+		display: none;
+	}
+
+	&__slids-list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 550px*3;
+
+		&::after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+	}
+
+	&__slid {
+		float: left;
+		width: 550px;
+		height: 340px;
+	}
+
+	&__slider {
+		text-align: center;
+		padding-right: 20px;
+
+		&-inner {
+			position: relative;
+			width: 100%;
+			height: 340px;
+			overflow: hidden;
+			border-radius: 4px;
+		}
+
+		&-controls {
+			position: relative;
+			display: inline-block;
+		}
+
+		&-btn {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #ffcabf;
+			margin: 0 3px;
+		}
+
+		&-btn__active {
+			background: @red-link;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin: 0 3px;
+		}
+
+		&-left {
+			position: absolute;
+			top: 6px;
+			left: -20px;
+			width: 12px;
+			height: 12px;
+			display: block;
+			background: url('../images/sprite1.png') no-repeat;
+			background-position: 0 0;
+		}
+
+		&-right {
+			position: absolute;
+			top: 6px;
+			right: -20px;
+			width: 12px;
+			height: 12px;
+			display: block;
+			background: url('../images/sprite1.png') no-repeat;
+			background-position: -12px 0;
+		}
+	}
+
+	&__tooltip-hover {
+		position: relative;
+		width: 260px;
+		height: 122px;
+		background: #fff;
+		border-radius: 4px;
+		text-align: center;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__tooltip-link1 {
+		color: @red-link;
+		font-size: 15px;
+		text-decoration: none;
+		font-style: italic;
+		font-family: 'Roboto-regular';
+	}
+
+	&__tooltip-link2 {
+		position: relative;
+		display: none;
+		width: 182px;
+		height: 28px;
+		background: @red-link;
+		font-family: 'Roboto-regular';
+		font-size: 13px;
+		color: #fff;
+		line-height: 28px;
+		border-radius: 4px;
+		margin: 15px auto 0;
+		text-decoration: none;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: -4px;
+			left: 50%;
+			background: @red-link;
+			width: 8px;
+			height: 8px;
+			transform: rotate(45deg);
+		}
+	}
+
+	&__tooltip-wrap:hover > &__tooltip-link2 {
+		display: block;
+	}
+
+	&__tooltip-link2:hover {
+		text-decoration: underline;
+	}	
+}
+
+
+
+	
+
+	
+
+	
+	
+
+
+.interactive__tabs {
+	background: #fff;
+	border-radius: 4px;
+	padding: 30px;
+	min-height: 260px;
+
+	.interactive__tabs-row {
+		display: inline-block;
+		box-shadow: 0 -1px 0 @color-line inset;
+
+		.interactive__tab-btn {
+			display: inline-block;
+			width: 103px;
+			height: 30px;
+			background: #fff;
+			border-radius: 4px 4px 0 0;
+			color: #000;
+			line-height: 30px;
+			text-decoration: none;
+			font-family: 'Roboto-regular';
+			font-size: 15px;
+			text-align: center;
+			margin-right: 10px;
+			box-shadow: 0 0 0 1px @color-line inset;
+		}
+		.interactive__tab-btn:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+
+
+.interactive__tab-btn__active {
+	display: inline-block;
+	width: 103px;
+	height: 30px;
+	background: @red-link;
+	border-radius: 4px 4px 0 0;
+	color: #fff;
+	line-height: 30px;
+	text-decoration: none;
+	font-family: 'Roboto-regular';
+	font-size: 15px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.interactive__tabs-texts {
+	padding-top: 20px;
+
+	.interactive__tab-text__text-1, .interactive__tab-text__text-2, .interactive__tab-text__text-3, .interactive__tab-text__text-4 {
+		font-family: 'Roboto-regular';
+		font-size: 15px;
+		line-height: 22px;
+		max-width: 430px;
+	}
+}
+
+
+
+

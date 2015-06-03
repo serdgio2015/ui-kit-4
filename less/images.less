@@ -1,0 +1,84 @@
+.images {
+	&__title {
+		font-family: 'MiriadPro-regular';
+		border-bottom: 1px solid @color-line;
+		margin: 22px 0 22px;
+		line-height: @h1+30px;
+	}
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item, &__item__hover, &__item__show, &__item__rotate {
+		position: relative;
+		width: 260px;
+		height: 260px;
+		background: url('../images/pic1.jpg');
+		background-size: cover;
+		border-radius: 4px;
+	}
+
+	&__item__hover {
+		background-color: #000;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__item__hidden {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 260px;
+		height: 260px;
+		background: rgba(0, 0, 0, 0.6) url('../images/img1.png') no-repeat;
+		background-position: 50% 50%;
+		border-radius: 4px;
+		transition: all 0.3s;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__item__show {
+		overflow: hidden;
+	}
+
+	&__item__figcaption {
+		position: absolute;
+		bottom: -70px;
+		left: 0;
+		display: block;
+		width: 260px;
+		height: 70px;
+		background: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		text-decoration: none;
+		padding: 20px;
+		font-family: 'Roboto-regular';
+		font-size: 14px;
+		line-height: 20px;
+		border-radius: 0 0 4px 4px;
+		transition: all 0.3s;
+	}
+
+	&__item__rotate {
+		transition: all 0.5s;
+		
+		&:hover {
+			transform: perspective(500px) rotateY(180deg);
+		}
+	}
+	
+}
+
+.images__item__show:hover .images__item__figcaption {
+	bottom: 0;
+}
+
+

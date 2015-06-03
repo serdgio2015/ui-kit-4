@@ -1,0 +1,79 @@
+
+
+.typographics {
+	font-family: 'Roboto-regular';
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	&__title {
+		font-family: 'MiriadPro-regular';
+		border-bottom: 1px solid @color-line;
+		margin: 22px 0 22px;
+		line-height: @h1+30px;
+	}
+
+	&__left {
+		width: 50%;
+		float: left;
+	}
+
+	&__list {
+		list-style: none;
+	
+		&-item {
+			line-height: 50px;
+
+			h1 {
+				font-size: @h1;
+			}
+			h2 {
+				font-size: @h2;
+			}
+			h3 {
+				font-size: @h3;
+			}
+		}
+	}
+
+	&__right {
+		width: 50%;
+		float: left;
+		font-size: 15px;
+		line-height: 22px;
+
+		p {
+			max-width: 450px;
+		}
+	}
+
+	&__link {
+		color: @red-link;
+	}
+
+	&__link:first-child {
+		margin-right: 15px;
+	}
+
+	&__link:hover {
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+	
+
+		
+	
+
+
+
+
